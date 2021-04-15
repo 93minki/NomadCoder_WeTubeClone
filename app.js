@@ -11,6 +11,7 @@ import routes from "./routes";
 
 const app = express();   // app을 만든다.express()를 실행한다.
 
+app.set("view engine", "pug")
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
